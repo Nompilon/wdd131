@@ -1,0 +1,25 @@
+h1{
+    background-color: rgb(172, 188, 240); 
+    color: black; 
+    padding: 2rem;
+    width: auto;
+    margin: 1rem auto;
+    font-weight: 600;
+    }
+main {
+    display: grid;
+    margin: 1rem auto;           
+}
+
+section{
+    border: 0.5rem solid rgb(172, 188, 240);
+    padding: 1rem;
+}
+
+footer{
+    Background-color: rgb(172, 188, 240);
+    color: black;
+    padding: 2rem;
+    width: auto;
+    margin: 1rem auto;   
+}
