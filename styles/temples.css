@@ -1,0 +1,112 @@
+:root{
+    --text: white;
+    --heading-background-color: rgb(1, 10, 4);
+    
+}
+
+main{
+    max-width: 1480px;
+    margin: 0 auto;
+}
+header{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    background-color: var(--heading-background-color);
+    color: var(--text);
+    width: 100%;
+    gap: 20px;
+}
+
+header p{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 1rem;
+}
+
+#menu {
+    display: block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--heading-background-color);
+    color: var(--text);
+    align-items: end;
+    
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    /*background-color: var(--heading-background-color);*/
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1460px;
+    text-align: center;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.5s;
+    font-size: 2.3rem;
+}
+
+.navigation a:hover,
+button:hover {
+    color: tomato;
+    cursor: pointer;
+}
+
+.navigation.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.temple{
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.temple img{
+    width: 100%;
+    height:auto;
+    margin: 0.5rem;
+}
+figcaption{
+    text-align: center;
+    color: blue;
+}
+
+footer {
+    position: absolute;
+    background-color:var(--heading-background-color);
+    height: 6rem;
+    padding: 0;
+    width: 100%;
+    color: var(--text);
+    text-align: center;
+    font-size: 1.3rem;
+}
