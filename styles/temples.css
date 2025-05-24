@@ -39,10 +39,6 @@ header p{
     content: "≡";
 }
 
-nav {
-    /*background-color: var(--heading-background-color);*/
-}
-
 .navigation {
     list-style: none;
     margin: 0 auto;
