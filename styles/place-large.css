@@ -1,41 +1,55 @@
 @media screen and (min-width: 640px) {
-    h1{
+    h1 {
         font-size: 3rem;
         margin: 0.5rem 0 0.5rem 0;
     }
+
     .hero {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        max-width: 3500px;
-        }
-    .data, .weather {
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .image{
+       grid-column: 1/6;
+       grid-row: 1/7;
+       width: 100%;
+       height: 100%;
+     }
+    .image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        margin: 0;
+     }
+     .data{
+        grid-column:1/2;
+        grid-row:2/4;
+        
+     }
+
+     .weather{
+        grid-column:5/6;
+        grid-row:5/7;
+     }
+
+    .data,
+    .weather {
         background-color: var(--background-color-opaque);
         max-width: 350px;
-        position: absolute;
         text-align: left;
         padding: 1rem;
         border-bottom: none;
-        
-        }
-    .data{
-        top: 20px;
-        left: 20px;
+        margin: 0 2rem;
     }
 
-    .weather {
-        bottom: 20px;
-        right: 20px;
-    }
-    
-    picture img {
-        display: block;
-        width: 100%;
-        padding: 0;
-    }
- 
-    .heading{
-        background-color: rgba(41, 85, 45 , 0.8);
+     
+
+    .heading {
+        background-color: rgba(41, 85, 45, 0.8);
         width: 350px;
         padding: 0.1rem 0.1rem 0.1rem 1rem;
         font-size: 25px;
@@ -44,16 +58,17 @@
         margin-inline-start: -2rem;
         color: white;
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         gap: 70px;
-       
+
     }
+
     .weather-icon::before {
         background-image: url("/images/weather-large.svg");
         width: 70px;
-        height:70px;
+        height: 70px;
     }
-    
+
 
     footer {
         display: grid;
@@ -64,21 +79,22 @@
         text-align: center;
         row-gap: 0.5rem;
         column-gap: 0.4rem;
-    }
     
+    }
+
     .footer-line.name {
         grid-column: 1;
         grid-row: 1;
     }
-    
+
     .footer-line.country {
         grid-column: 2;
         grid-row: 1;
     }
-    
+
     .footer-line.time {
         grid-column: 1 / span 2;
-        grid-row: 2;   
+        grid-row: 2;
     }
-              
+
 }

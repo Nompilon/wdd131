@@ -10,13 +10,11 @@ header{
     text-align: center;
     background-color:var(--background-color);
     color: var(--text);
-    height: 5rem;
-    padding: 0.5rem 0 0.5rem 0;
+    height:4rem;
     width: 100%;
-    position: static;
+
 }
-article{
-    max-width: 639px;
+.hero{
     display: grid;
     grid-template-columns: 1fr;
     margin: 0;
@@ -25,12 +23,10 @@ article{
     transition: 0.3s;
     font-size: 15px;
 }
- 
-
-picture img{
-    display: block;
-    height: auto;
+.image{
+   
     width: 100%;
+    height: auto;
 }
 
 .data, .weather{
@@ -38,8 +34,7 @@ picture img{
     background-color: rgb(250, 243, 249);
     border-bottom: .1rem solid rgb(241, 239, 239);
     align-self: center;
-    padding:0 9rem 2rem 9rem;
-
+    padding: 0 9rem 2rem 9rem;
 }
 
 .heading{
@@ -82,8 +77,8 @@ footer {
     height: auto;
     width: 100%;
     color: var(--text);
-    padding: 1rem 0;
-    font-size: 1rem;
+    font-size: 0.3rem 0;
     position: static;
+    height: 4rem;
     text-align: center;
 }
