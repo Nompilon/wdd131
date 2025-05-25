@@ -12,14 +12,22 @@ header{
     color: var(--text);
     height:4rem;
     width: 100%;
-
 }
-.hero{
+/*.hero{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    transition: 0.3s;
+    font-size: 15px;
+    width: 100%;
+}*/
+.hero {
+    max-width: 4500px;
     display: grid;
     grid-template-columns: 1fr;
     margin: 0;
     padding: 0;
-    height:auto;
+    height: auto;
     transition: 0.3s;
     font-size: 15px;
 }
@@ -27,14 +35,22 @@ header{
    
     width: 100%;
     height: auto;
+    position: block;
 }
-
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
 .data, .weather{
     text-align: center;
-    background-color: rgb(250, 243, 249);
+    background-color: rgb(228, 219, 226);
     border-bottom: .1rem solid rgb(241, 239, 239);
-    align-self: center;
+    margin: 0 auto;
+    padding:0;
     padding: 0 9rem 2rem 9rem;
+    grid-template-columns: 1/2;
 }
 
 .heading{
