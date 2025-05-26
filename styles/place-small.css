@@ -13,13 +13,17 @@ header {
     background-color: var(--background-color);
     color: var(--text);
     height: 4rem;
-    width: 464px;
 }
-
+.container {
+    width: 1500px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
 .hero {
     display: felx;
     flex-wrap: wrap;
-    width: fit-content;
+    width: 100%;
 }
 
 .image {
@@ -91,7 +95,6 @@ footer {
     justify-content: space-around;
     background-color: var(--background-color);
     height: auto;
-    width: 464px;
     color: var(--text);
     font-size: 0.3rem 0;
     position: static;

@@ -3,16 +3,35 @@
         font-size: 3rem;
         margin: 0.5rem 0 0.5rem 0;
     }
-    header, footer{
-        min-width: 1119px;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+       "main"
+       "footer";
     }
+    header {
+        grid-area: header;
+        width: 100%;
+    }
+    
+    .hero {
+        grid-area: main;
+        width: 100%;
+    }
+    
+    footer {
+        grid-area: footer;
+        width: 100%;   }
+    
     .hero {
         position: relative;
         width: 100%;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(5 1fr);
-        grid-template-rows: repeat(6 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
     }
 
     .image {
@@ -83,6 +102,7 @@
         text-align: center;
         row-gap: 0.5rem;
         column-gap: 0.4rem;
+        width: 100%;
     }
 
     .footer-line.name {
