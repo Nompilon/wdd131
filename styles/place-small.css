@@ -23,20 +23,21 @@ header {
 }
 .hero {
     width: 100%;
+
 }
 
 .image {
 
     width: 100%;
     height: auto;
-    position: block;
+    
 }
 
 .image img {
     width: 100%;
     height: auto;
-    /*display: block;*/
     object-fit: cover;
+    margin: 0;
 }
 
 .data,
