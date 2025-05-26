@@ -67,7 +67,7 @@ header {
     display: inline-block;
     width: 90px;
     height: 90px;
-    background: url("images/weather-small.svg");
+    background: url("images/weather-large.svg");
     background-size: contain;
 
 }
