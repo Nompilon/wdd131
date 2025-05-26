@@ -13,7 +13,7 @@
        "footer";
     }
     header {
-        padding: 0.4rem;
+        padding:0.5rem 0;
         grid-area: header;
         width: 100%;
     }
