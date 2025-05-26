@@ -3,7 +3,9 @@
         font-size: 3rem;
         margin: 0.5rem 0 0.5rem 0;
     }
-
+    header, footer{
+        min-width: 1119px;
+    }
     .hero {
         position: relative;
         width: 100%;
@@ -12,30 +14,33 @@
         grid-template-columns: repeat(5 1fr);
         grid-template-rows: repeat(6 1fr);
     }
-    .image{
-       grid-column: 1/6;
-       grid-row: 1/7;
-       width: 100%;
-       height: 100%;
 
-     }
+    .image {
+        grid-column: 1/6;
+        grid-row: 1/7;
+        width: 100%;
+        height: 100%;
+
+    }
+
     .image img {
         width: 100%;
         height: 100%;
         display: block;
         object-fit: cover;
         margin: 0;
-     }
-     .data{
-        grid-column:1/2;
-        grid-row:1/4;
-        
-     }
+    }
 
-     .weather{
-        grid-column:5/6;
-        grid-row:5/7;
-     }
+    .data {
+        grid-column: 1/2;
+        grid-row: 1/4;
+
+    }
+
+    .weather {
+        grid-column: 5/6;
+        grid-row: 5/7;
+    }
 
     .data,
     .weather {
@@ -46,8 +51,6 @@
         border-bottom: none;
         margin: 6rem;
     }
-
-     
 
     .heading {
         background-color: rgba(41, 85, 45, 0.8);
@@ -80,7 +83,7 @@
         text-align: center;
         row-gap: 0.5rem;
         column-gap: 0.4rem;
-     }
+    }
 
     .footer-line.name {
         grid-column: 1;
