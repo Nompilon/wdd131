@@ -7,7 +7,15 @@
 * {
     font-family: 'Times New Roman', Times, serif;
 }
-
+.container {
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
 header {
     text-align: center;
     background-color: var(--background-color);
@@ -84,10 +92,12 @@ header {
 .label {
     font-weight: bold;
     text-align: right;
+    padding: 0.35rem;
 }
 
 .value {
     text-align: left;
+    padding: 0.355rem;
 }
 
 footer {

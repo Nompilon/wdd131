@@ -3,15 +3,7 @@
         font-size: 3rem;
         margin: 0.5rem 0 0.5rem 0;
     }
-    .container {
-        object-fit: cover;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "header"
-       "main"
-       "footer";
-    }
+    
     header {
         padding:0.5rem 0;
         grid-area: header;
