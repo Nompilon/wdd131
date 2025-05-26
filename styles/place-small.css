@@ -12,7 +12,8 @@ header {
     text-align: center;
     background-color: var(--background-color);
     color: var(--text);
-    height: 4rem;
+    /*height: 4rem;*/
+    padding: 0.1rem ;
 }
 .container {
     width: 1500px;
@@ -21,8 +22,6 @@ header {
     width: 100%;
 }
 .hero {
-    display: felx;
-    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -97,7 +96,7 @@ footer {
     background-color: var(--background-color);
     height: auto;
     color: var(--text);
-    font-size: 0.3rem 0;
+    font-size:0.8rem;
     position: static;
     height: 4rem;
     text-align: center;
