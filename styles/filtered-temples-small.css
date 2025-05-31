@@ -1,0 +1,119 @@
+:root {
+    --text: white;
+    --heading-background-color: rgb(109, 24, 24);
+
+}
+
+main {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    background-color: var(--heading-background-color);
+    color: var(--text);
+    width: 100%;
+    gap: 20px;
+}
+
+header p {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 1rem;
+}
+
+#menu {
+    display: block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--heading-background-color);
+    color: var(--text);
+    align-items: center;
+
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1460px;
+    text-align: center;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.5s;
+    font-size: 2.3rem;
+}
+
+.navigation a:hover,
+button:hover {
+    color: tomato;
+    cursor: pointer;
+}
+
+.navigation.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+section{
+    
+    background-color: rgb(239, 239, 245, 0.8);
+    padding: 0 2rem 0 1rem;
+}
+#temple-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+   
+}
+
+#temple-cards img{
+    
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+   
+}
+
+figcaption {
+    text-align: center;
+    color: blue;
+}
+
+footer {
+    position: absolute;
+    background-color: var(--heading-background-color);
+    height: 6rem;
+    padding: 0;
+    width: 100%;
+    color: var(--text);
+    text-align: center;
+    font-size: 1.3rem;
+}

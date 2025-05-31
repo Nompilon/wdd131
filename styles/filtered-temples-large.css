@@ -1,0 +1,42 @@
+@media only screen and (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #temple-cards {
+        display: grid;
+        /*grid-template-columns: 1fr 1fr 1fr;*/
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    
+    }
+
+    #temple-cards img{
+        aspect-ratio: 2 / 1;
+       
+    }
+}
