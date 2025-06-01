@@ -8,10 +8,33 @@ main {
     max-width: 1080px;
     margin: 0 auto;
 }
+.container {
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+header {
+    padding: 0.5rem 0;
+    grid-area: header;
+    width: 100%;
+}
 
+main{
+    grid-area: main;
+    width: 100%;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+}
 header {
     display: grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: var(--heading-background-color);
     color: var(--text);
     width: 100%;
@@ -21,23 +44,24 @@ header {
 header p {
     font-size: 2.5rem;
     font-weight: 900;
-    margin: 1rem;
+    margin: 0 2rem;
 }
 
 #menu {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     font-weight: 700;
     font-size: 3rem;
     text-decoration: none;
-    padding: 0.5rem 0.75rem;
+    padding:0 2rem;
     background-color: var(--heading-background-color);
     color: var(--text);
-    align-items: center;
 
 }
 
 #menu::before {
     content: "≡";
+    
 }
 
 .navigation {
@@ -73,7 +97,6 @@ button:hover {
 
 #menu.show::before {
     content: "X";
-
 }
 
 h1 {
@@ -108,10 +131,9 @@ figcaption {
 }
 
 footer {
-    position: absolute;
     background-color: var(--heading-background-color);
     height: 6rem;
-    padding: 0;
+    margin:1rem 0 0 0;
     width: 100%;
     color: var(--text);
     text-align: center;
