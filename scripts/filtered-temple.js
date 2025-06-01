@@ -155,7 +155,7 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show');
 });
 const img = document.createElement('img');
-img.src = temple.imageUrl;
+img.src = filteredTemples.imageUrl;
 img.width = 400; // set explicit width
 img.height = 250; // set explicit height
-img.alt = temple.templeName;
+img.alt = filteredTemples.templeName;
