@@ -63,7 +63,7 @@ const temples = [
         dedicated: "2020, February, 16",
         area: 10700,
         imageUrl:
-            "images/durban-south-africa-temple-7923.jpg"
+            "images/durban-south-africa-temple-7923.webp"
 
     },
     {
@@ -72,7 +72,7 @@ const temples = [
         dedicated: "1999, October, 23 - 24",
         area: 19860,
         imageUrl:
-            "images/detroit-michigan-temple-30608.jpg"
+            "images/detroit-michigan-temple-30608.webp"
     },
 
     {
@@ -81,7 +81,7 @@ const temples = [
         dedicated: "2001, May, 20",
         area: 10700,
         imageUrl:
-            "images/perth-australia-temple-16295-thumb.jpg"
+            "images/perth-australia-temple-16295-thumb.webp"
     },
     
   ];
