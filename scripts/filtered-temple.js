@@ -97,6 +97,12 @@ function createTempleCard(filteredTemples) {
         img.setAttribute("alt", `${temple.templeName} Temple`);
         img.setAttribute("loading", "lazy");
 
+        const img = document.createElement('img');
+        img.src = filteredTemples.imageUrl;
+        img.width = 400; // set explicit width
+        img.height = 250; // set explicit height
+        img.alt = filteredTemples.templeName;
+
         // Append elements to card
         card.appendChild(name);
         card.appendChild(location);
@@ -154,8 +160,3 @@ hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('show');
     hambutton.classList.toggle('show');
 });
-const img = document.createElement('img');
-img.src = filteredTemples.imageUrl;
-img.width = 400; // set explicit width
-img.height = 250; // set explicit height
-img.alt = filteredTemples.templeName;
