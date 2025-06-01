@@ -63,7 +63,7 @@ const temples = [
         dedicated: "2020, February, 16",
         area: 10700,
         imageUrl:
-            "../images/durban-south-africa-temple-7923.jpg"
+            "..wdd131/images/durban-south-africa-temple-7923.jpg"
 
     },
     {
@@ -72,7 +72,7 @@ const temples = [
         dedicated: "1999, October, 23 - 24",
         area: 19860,
         imageUrl:
-        "../images/detroit-michigan-temple-30608.jpg"
+        "..wdd131/images/detroit-michigan-temple-30608.jpg"
     }
     // Add more temple objects here...
   ];
