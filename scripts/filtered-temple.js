@@ -73,8 +73,17 @@ const temples = [
         area: 19860,
         imageUrl:
             "images/detroit-michigan-temple-30608.jpg"
-    }
-    // Add more temple objects here...
+    },
+
+    {
+        templeName: "Perth Australia",
+        location: "Perth, Australia",
+        dedicated: "2001, May, 20",
+        area: 10700,
+        imageUrl:
+            "images/perth-australia-temple-16295-thumb.jpg"
+    },
+    
   ];
 function createTempleCard(filteredTemples) {
     clearTempleCards();
@@ -93,11 +102,6 @@ function createTempleCard(filteredTemples) {
         location.innerHTML = `<span class="labels">Location:</span> ${temple.location}`;
         dedicated.innerHTML =`<span class="label">Dedicated: </span> ${temple.dedicated}`;
         area.innerHTML = `<span class="label"> Size:</span> ${temple.area} sq ft`;
-        img.src = filteredTemples.imageUrl;
-        img.width = 400; // set explicit width
-        img.height = 250; // set explicit height
-        img.alt = filteredTemples.templeName;
-
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
         img.setAttribute("loading", "lazy");
