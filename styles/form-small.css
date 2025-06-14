@@ -1,0 +1,161 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+header {
+    padding: 0.5rem 0;
+    grid-area: header;
+    width: 100%;    
+    margin: 0;
+}
+
+h1 {
+   font-weight: 900;
+   padding: 0 4%;    
+}
+main{
+    background-color: aliceblue;
+    color: black;
+    padding: 0 1%;
+    min-height: 20rem;
+}
+
+.star-rating {
+    direction:rtl;
+    font-size: 2rem;
+    unicode-bidi: bidi-override;
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    align-self: normal;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.star-rating 
+input:checked~label {
+    color: gold;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: gold;
+} 
+.rev input[type="text"],
+.rev input[type="date"],
+.rev textarea
+
+/*.rev input[type="submit"]*/
+{
+        background-color: #eee;
+        display: block;
+        /* blco will align or stack all the listed types on top of each other*/
+        padding: .75rem;
+        /*this is the minmum or recommended*/
+        border: 1px solid #999;
+        border-radius: 6px;
+        color: #555;
+        width: 100%;
+        max-width: 400px;
+        appearance: none;
+        /*to override the browser default settings*/
+}
+.rev select {
+    display: block;
+    width: 96%;
+    max-width: 425px;
+    /* match other inputs */
+    box-sizing: border-box;
+    background-color: #eee;
+    padding: .75rem;
+    padding-right: 2.5rem;
+    /* extra space for arrow */
+    border-radius: 6px;
+    border: 1px solid #999;
+    appearance: none;
+    /* removes default arrow (some browsers) */
+
+}
+     
+    
+.rev input,
+.rev select,
+.rev textarea {
+    margin-top: 0.5rem;
+}
+
+
+.rev input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#418574, #041d1a);
+    color: white;
+    padding: .8rem;
+    width: 100%;
+    max-width: 425px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #838388;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+
+}
+
+.rev input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.rev fieldset {
+    margin: 2rem 0;
+    border:none;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.rev label {
+    display: block;
+    /* block allows the things to be stacked together nicely.*/
+    padding-top: 1rem;
+    color:black;
+    font-size: .9rem;
+}
+
+.check-all p {
+    padding-top: 0;
+    
+    font-size: .9rem;
+    font-style: italic;
+}
+.optional p{
+    color: #445ba9;
+    }
+
+header, footer{
+    background-color:   rgb(223, 181, 118);
+    color: rgb(5, 5, 5);
+    margin:0;   
+ }
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}

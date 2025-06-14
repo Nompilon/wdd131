@@ -70,10 +70,12 @@ section{
     gap: 15rem;
     margin: 0 6rem;
 }
- body{
+  
+body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
- }
+ } 
+   
 h1{
     font-weight: 900;
 }

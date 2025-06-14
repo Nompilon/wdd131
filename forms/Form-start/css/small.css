@@ -82,14 +82,14 @@ main {
 .wf1 input[type="email"],
 .wf1 input[type="url"],
 .wf1 input[type="date"],
-.wf1 select,
-.wf1 input[type="select"]
+.wf1 select
+/*.wf1 input[type="select"]*/
 {
         background-color: #eee; 
         display: block; /* blco will align or stack all the listed types on top of each other*/
         padding: .75rem; /*this is the minmum or recommended*/
         border: 1px solid #999;
-        border-radius: 6px ;
+        border-radius: 6px;
         color: #555;
         width:100%;
         max-width: 400px;
