@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Form</title>
+    <title>Product Review Form</title>
     <meta name="author" content="Nompilo Ngwenya">
     <meta name="description" content="The page allows the customers to review the products and gives them feedback on the number of reviews they have done.">
-    <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form-small.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +17,7 @@
     <div class="container">
         <header>
             <h1>Product Review</h1>
+        </header>
         <main>
             <form method="get" action="review.html" class="rev">
                 <fieldset class="product">
@@ -37,9 +37,8 @@
                 </fieldset>
                 <fieldset>
                     <label>Date of installation* <input type="date" name="installationDate" id="date" required></label>
-                    <label><div class="check-all">Which features did you find useful in the product? 
-                        <p>(Check all that apply)</p></label>
-                    </div>
+                    <label >Which features did you find useful in the product?</label>
+                    <p>(Check all that apply)</p>
                     <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
                     <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes"> Easy of Use</label>
                     <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
