@@ -99,7 +99,7 @@ function createTempleCard(filteredTemples) {
 
         // Set content
         name.textContent = temple.templeName;
-        location.innerHTML = `<span class="labels">Location:</span> ${temple.location}`;
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
         dedicated.innerHTML =`<span class="label">Dedicated: </span> ${temple.dedicated}`;
         area.innerHTML = `<span class="label"> Size:</span> ${temple.area} sq ft`;
         img.setAttribute("src", temple.imageUrl);

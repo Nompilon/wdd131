@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple album page - Ngwenya Nompilo">
+    <meta name="author" content="Nompilo Ngwenya">
+    <title>club home page</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https:/ipts/navigation.js" defer></script>
+    <script src="scripts/recipes.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body class="container">
+    <header>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <div>
+                <h1>Beginner's cooking club</h1>
+            </div>
+        </div>
+        <div>
+            <a href="#" id="menu" aria-label="menu to access the nav ins phones" class="small-screen"></a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html" id="home" title="Home">Home</a></li>
+                    <li><a href="recipes.html" id="Recipes" title="Recipes">Recipes</a></li>
+                    <li><a href="contact.html" id="contact-us" title="Count Us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article class="hero">
+            <section class="banner">
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width: 1500px)">
+                    <source srcset="images/hero-medium.webp" media="(min-width: 1000px)">
+                    <img src="images/hero-small.webp" alt="Temple name and location" width="500" height="250">
+                </picture>
+            </section>
+        </article>
+        <section class="container3">
+
+            <article class="card2">
+                <h2>Delicious and easy to follow recipes</h2>
+                <article id="filter-buttons">
+                    <div>
+                        <button id="all-btn">All</button>
+                    </div>
+                    <div>
+                        <button id="baking-btn">Baking</button>
+                    </div>
+                    <div>
+                        <button id="full-meal-btn">Full meal</button>
+                    </div>
+                    <div>
+                        <button id="dessert-btn">Desserts</button>
+                    </div>
+
+                </article>
+                <article id="mainfolder">
+                    <div id="recipes-pictures">
+                    </div>
+                </article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> &#10070; Nompilo Ngwenya &#10070; South Africa </p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

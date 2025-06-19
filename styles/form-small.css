@@ -22,7 +22,8 @@ header {
 
 h1 {
    font-weight: 900;
-   padding: 0 4%;    
+   padding: 0 4%; 
+   font: bold;   
 }
 main{
     background-color: aliceblue;
@@ -158,4 +159,5 @@ footer {
     width: 100%;
     font-size: 1rem;
     text-align: center;
+    
 }
