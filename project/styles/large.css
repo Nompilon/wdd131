@@ -8,13 +8,18 @@
         color: var(--text);
         gap: 0;
     }
+
+    header .logo h1 {
+            white-space: nowrap;     
+        }
+
     .navigation {
         display: flex;
         justify-content: space-around;
         
     }
 
-.navigation li {
+    .navigation li {
         display: block;
         /* change state in small view */
         flex: 1 1 100%;
@@ -23,6 +28,7 @@
     .navigation a {
         /*text-align: center;*/
         font-size: 1.2rem;
+        white-space: nowrap;
         color: var(--text);
     }
     h1{
@@ -156,5 +162,19 @@
     footer{
         background-color:var(--heading-background-color);
         color: var(--text);
+    }
+
+    .banner-text blockquote { 
+        font-size: 1.5rem; 
+     }
+    
+    .banner-text footer {  
+        font-size: .9rem;
+    }
+
+    .banner-text {
+        position: absolute;
+        bottom: 20%;
+        left:50%;
     }
 }

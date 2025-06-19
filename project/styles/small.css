@@ -34,7 +34,7 @@ header {
     grid-template-columns: 1fr 2fr;
     background-color: var(--heading-background-color2);
     color: var(--text1);
-    /*gap: 20px;*/
+    
 }
 h1 {
     font-weight:900;
@@ -64,8 +64,8 @@ h1 {
     font-size: 3rem;
     text-decoration: none;
     padding: 0 2rem;
-    background-color: var(--heading-background-color2);
-    color: var(--text1);
+    background-color: var(--tex1);
+    color: var(--heading-background-1);
 
 }
 
@@ -398,28 +398,31 @@ footer {
 
 .banner-text {
     position: absolute;
-    bottom: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    background: none;
-    /* dark semi-transparent background */
+    bottom: 8%;
+    left: 55%;
+    transform: translateX(-40%);
+    background-color: rgba(255, 255, 255, 0);
     padding: 0;
-    border-radius: 8px;
+    border-radius: 1px;
     max-width: 90%;
+    width: 25rem;
 }
 
 .banner-text blockquote {
     margin: 0 -2rem;
     font-size: 1rem;
     font-style: italic;
-    color: #fff;
+    font-weight: 800;
+    color:var(--text1);
 }
 
 .banner-text footer {
-    font-size: 0.9rem;
-    color: #ddd;
-    margin-top: 0.5rem; }
+    font-size: .8rem;
+    color: var(--text1);
+    margin-top: 0.5rem; 
+    transform: translateX ;
+    background-color: rgba(255, 255, 255, 0);
+}
 
 .rev p{
     font-weight: 800;
