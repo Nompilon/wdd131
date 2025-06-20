@@ -50,6 +50,7 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        margin: 0 .8rem;
         }
     
     .banner {
@@ -166,8 +167,9 @@
 
     .banner-text blockquote { 
         font-size: 1.5rem; 
-     }
-    
+        background-color: rgb(248, 236, 228, 0.4);
+        border-radius: 2rem;
+    }  
     .banner-text footer {  
         font-size: .9rem;
     }
@@ -176,5 +178,7 @@
         position: absolute;
         bottom: 20%;
         left:50%;
+        max-width: 90%;
+        width: 50rem;
     }
 }
