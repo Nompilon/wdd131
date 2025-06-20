@@ -98,8 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
             img.src = pic.imageUrl;
             img.alt = "Recipe image";
             img.loading = "lazy";
-            img.style.width = "200px";
-            img.style.margin = "10px";
 
             link.appendChild(img);
             recipesDiv.appendChild(link);

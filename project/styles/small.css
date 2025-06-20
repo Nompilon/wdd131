@@ -11,7 +11,6 @@ body {
     font-family: "Poppins", Arial ,sans-serif;
 }
 .container {
-    object-fit: cover;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -23,7 +22,7 @@ body {
 main {
     grid-area: main;
     width: 100%;
-    max-width: 2080px;
+    max-width: none;
     margin: 0;
 }
 
@@ -183,17 +182,22 @@ background-image: linear-gradient(var(--heading-background-color1), var(--headin
     width: 100%;
     height: auto;
     margin: 0;
-    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 
 }
 
+#picture-cards img:hover {
+    transform: scale(1.03);
+}
 #filter-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
     align-self: center;
-    padding: 0.25rem 15rem;
+    padding: 0.25rem 5%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
 }
 
@@ -204,26 +208,28 @@ background-image: linear-gradient(var(--heading-background-color1), var(--headin
     font-size: 1rem;
     font-weight: 600;
     background-color: var(--heading-background-color);
-    color: var(--text2);
+    color: var(--heading-background-color2);
     margin: 0.5rem;
 }
-
 #recipes-pictures {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
     text-align: center;
     font-size: 1rem;
-
+    gap: 2rem;
 }
 
 #recipes-pictures img {
-
     width: 100%;
-    min-width: 200px;
     height: auto;
-    margin: 0;
-    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#recipes-pictures img:hover {
+    transform: scale(1.03);
 }
 
 footer {
@@ -268,8 +274,6 @@ footer {
 .rev input[type="text"],
 .rev input[type="date"],
 .rev textarea
-
-/*.rev input[type="submit"]*/
     {
     background-color: #eee;
     display: block;
