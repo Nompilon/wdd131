@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ————— Picture cards —————
     const pictures = [
-        { pictureName: "Baking", imageUrl: "images/baking-home.webp", linkUrl: "recipes.html" },
+        { pictureName: "Baking", imageUrl: "images/baking-home.webp", linkUrl: "recipes.html?filter=baking" },
 
-        { pictureName: "Cooking", imageUrl: "images/cooking-home.webp", linkUrl: "recipes.html" },
+        { pictureName: "Cooking", imageUrl: "images/cooking-home.webp", linkUrl: "recipes.html?filter=full-meal" },
         
-        { pictureName: "Desserts", imageUrl: "images/dessert4.webp", linkUrl: "recipes.html" }
+        { pictureName: "Desserts", imageUrl: "images/dessert4.webp", linkUrl: "recipes.html?filter=dessert" }
     ];
 
     const container = document.querySelector("#picture-cards");

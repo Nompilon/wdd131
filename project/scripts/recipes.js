@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const recipesDiv = document.getElementById("recipes-pictures");
 
     function displayImages(filter = "all") {
-        recipesDiv.innerHTML = ""; // Clear previous images
+        recipesDiv.innerHTML = "";
 
         const filtered = pictures.filter(p => {
             if (filter === "all") return true;
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
         filtered.forEach(pic => {
             const link = document.createElement("a");
             link.href = pic.recipeUrl;
-            link.target = "_blank"; // open link in new tab
+            link.target = "_blank";
             link.rel = "noopener noreferrer";
 
             const img = document.createElement("img");
@@ -104,13 +104,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Initial display of all images
-    displayImages("all");
+    // ✅ Get filter from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterParam = urlParams.get("filter") || "all";
 
-    // Set up buttons to filter images
+    // ✅ Apply filter on load
+    displayImages(filterParam);
+
+    // Button click filters (still work as usual)
     document.getElementById("all-btn").addEventListener("click", () => displayImages("all"));
     document.getElementById("baking-btn").addEventListener("click", () => displayImages("baking"));
     document.getElementById("full-meal-btn").addEventListener("click", () => displayImages("full-meal"));
     document.getElementById("dessert-btn").addEventListener("click", () => displayImages("dessert"));
 });
-
