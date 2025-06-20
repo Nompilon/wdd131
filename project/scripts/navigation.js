@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // ————— Picture cards —————
     const pictures = [
         { pictureName: "Baking", imageUrl: "images/baking-home.webp", linkUrl: "recipes.html" },
+
         { pictureName: "Cooking", imageUrl: "images/cooking-home.webp", linkUrl: "recipes.html" },
+        
         { pictureName: "Desserts", imageUrl: "images/dessert4.webp", linkUrl: "recipes.html" }
     ];
 

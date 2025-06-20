@@ -150,14 +150,14 @@
 
     #recipes-pictures {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
         width:100%;
         height: auto;
-        margin: 0 -.5rem;
+        margin: 0;
     }    
     #recipes-pictures img {
-        aspect-ratio: 1/1;
+        aspect-ratio: 4/3;
     
         }
         
@@ -182,4 +182,5 @@
         max-width: 90%;
         width: 50rem;
     }
+
 }
