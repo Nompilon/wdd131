@@ -208,7 +208,7 @@ background-image: linear-gradient(var(--heading-background-color1), var(--headin
     font-size: 1rem;
     font-weight: 600;
     background-color: var(--heading-background-color);
-    color: var(--heading-background-color2);
+    color: var(--text);
     margin: 0.5rem;
 }
 #recipes-pictures {
