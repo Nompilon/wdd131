@@ -208,6 +208,24 @@ background-image: linear-gradient(var(--heading-background-color1), var(--headin
     margin: 0.5rem;
 }
 
+#recipes-pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+#recipes-pictures img {
+
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+    margin: 0;
+    aspect-ratio: 4/3;
+}
+
 footer {
     grid-area: footer;
     background-color: var(--heading-background-color1);
