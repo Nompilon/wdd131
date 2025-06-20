@@ -6,7 +6,7 @@
         width: 100%;
         background-color:var(--heading-background-color);
         color: var(--text);
-        gap: 0;
+    
     }
 
     header .logo h1 {
@@ -15,22 +15,22 @@
 
     .navigation {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
+        flex-direction: row;
         gap: 2rem;
         
     }
 
     .navigation li {
         display: block;
-        /* change state in small view */
         flex: 1 1 100%;
     }
 
     .navigation a {
-        text-align: center;
         font-size: 1.2rem;
         white-space: nowrap;
         color: var(--text);
+        padding: 0 2rem 0  0;
     }
     h1{
         font-size: 2.5rem;

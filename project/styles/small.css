@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", Arial ,sans-serif;
 }
 .container {
     object-fit: cover;
@@ -65,7 +65,7 @@ h1 {
     text-decoration: none;
     padding: 0 2rem;
     background-color: var(--heading-background-color1);
-    color: var(--heading-background1);
+    color: var(--text1);
 
 }
 
@@ -194,7 +194,6 @@ background-image: linear-gradient(var(--heading-background-color1), var(--headin
     list-style: none;
     align-self: center;
     padding: 0.25rem 15rem;
-    border-bottom: solid var(--boarder-color);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
 }
 
